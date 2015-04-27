@@ -1,0 +1,95 @@
+
+@import url("reset.css");
+
+/* Fonts -------------------- */
+
+
+/* Base Styles -------------------- */
+
+* {
+
+}
+
+body {
+	background-color: #FFFFF8;
+	margin: 0 auto;
+	width: 100%;
+}
+
+h1 {
+	margin-right: 3%;
+	text-align: right;
+	color: #111111;
+	font: 5.5rem "Arial Black", Gadget, sans-serif;
+	letter-spacing: .05em;
+	text-shadow: 4px 4px 4px rgba(1, 1, 1, .8);
+}
+
+li {
+	list-style-type: none;
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: #363636;
+  text-decoration: none;
+}
+
+a:visited {
+  color: ; DarkCyan;
+}
+
+a:hover {
+  color: DodgerBlue;
+}
+
+a:active {
+  color: Red;
+}
+
+/* Layout Styles ------------------ */
+
+#wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#sidebar {
+	width: 20%;
+	height: 600px;
+	color: #003300;
+	background-color: #EEEEEE; 
+	float: left;
+	font: 1em/2 "Helvetica Neue", Helvetica, sans-serif;
+	text-align: right;
+}
+
+.sidebar-header {
+	font-size: 1.2em;
+}
+
+#main-image {
+	width: 75%;
+	height: 100%;
+	background-color: AntiqueWhite;
+	float: left;
+	margin-left: 5px;
+	text-align: center;
+}
+
+#main-footer {
+	font: 15px "Trebuchet MS", Helvetica, sans-serif;
+	text-align: right;
+	text-shadow: 4px 4px 2px rgba(1, 1, 1, .8);
+	border-top: 1px solid #000000; 
+	/*height: 15px;
+	line-height: 15px; */
+}
+
+/* Float Clearfix ------------------ */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
