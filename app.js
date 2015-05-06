@@ -4,12 +4,14 @@
 var $image = $("<img>");
 var $caption = $("<p></p>");
 var mainimage = $("#main-image img");
-var $artistInfo = $("<p></p>");
+var $artistInfo = $("<p>The Artist</p>");
+var $contact = $("<p></p>");
 
 //Fade h1 on load
 $("html").ready(function() {
 	$("h1").slideDown(600);
 	mainimage.hide();
+	$("#contact").hide();
 	mainimage.delay(1000).fadeIn(600);
 });
                  
@@ -18,7 +20,16 @@ $("#sidebar a").click(function(event) {
   event.preventDefault();
 	mainimage.hide();
 	mainimage.attr("src", "img/" + $(this).text() + ".jpg");
-	$("#main-image").append($caption);	
-	$caption.text($(this).text());
+	
+	if($(this).hasClass("artist")) {
+		$caption.remove();
+		$("#main-image").prepend($artistInfo);
+		$("#contact").show();
+	} else {
+		$artistInfo.remove();
+		$("#contact").hide();
+		$("#main-image").append($caption);
+		$caption.text($(this).text());
+	}
 	mainimage.fadeIn("slow");
 });

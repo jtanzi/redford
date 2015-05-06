@@ -70,16 +70,21 @@ a:active {
 	float: left;
 	font: 1em/2 "Helvetica Neue", Helvetica, sans-serif;
 	text-align: right;
+	background: linear-gradient(to left, #CCCC00, #FFFFFF);
 }
 
 .sidebar-header {
 	font-size: 1.2em;
 }
 
+.artist {
+	font-size: 1.2em;
+}
+
 #main-image {
 	width: 75%;
 	height: 100%;
-	background-color: #FFFFFF;
+	background-color: #E0FFFF;
 	float: left;
 	margin-left: 5px;
 	text-align: center;
